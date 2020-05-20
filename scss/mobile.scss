@@ -1,0 +1,49 @@
+.mobile {
+    background: url('../img/iphoneFon.jpg') center no-repeat #000;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba( #000000, 0.7);
+        z-index: -1;
+    }
+}
+.mobile__row {
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 46px 20px 104px 20px;
+    //max-width: 1100px;
+}
+.mobile__img-block {
+}
+.mobile__img {
+    width: 100%;
+}
+.mobile__title {
+    margin-bottom: 20px;
+}
+.mobile__subtitle {
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.mobile__text {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+    letter-spacing: 0.1em;
+}
+.mobile__app-block {
+    display: flex;
+    justify-content: space-between;
+}
+.mobile__app-img {
+    flex: 0 1 40%;
+}

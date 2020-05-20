@@ -1,0 +1,115 @@
+.wrapper{
+    font-family: 'Times new roman', serif;
+    display: flex;
+    flex-direction: column;
+    //max-width: 1500px;
+}
+.content{
+    flex: 1 1 100%;
+}
+.container{
+    max-width: 1175px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+.btn {
+    padding: 16px 40px;
+    color: #fff;
+    background-color: #E7A331;
+    font-size: 15px;
+    border-radius: 5px;
+    &--s {
+        width: 70%;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+.title {
+    font-size: 29px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 16px;
+    &--white {
+        color: #fff;
+    }
+}
+.subtitle {
+    font-size: 38px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    &--white {
+        color: #fff;
+    }
+    &--s {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    &--m {
+        font-size: 18px;
+        color: #000;
+    }
+}
+.text {
+    font-size: 15px;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #4A4A4A;
+    font-weight: 500;
+}
+.footer {
+    background: #000;
+    text-align: center;
+    &__text {
+        padding: 28px 20px;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+.slider-btn {
+    position: absolute;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    color:  rgba(#fff, 0.5);
+    background-color: rgba(#4A4A4A, 0);
+    border-radius: 50%;
+    opacity: 100%;
+    bottom: 50%;
+    &:hover {
+        background-color: rgba(#4A4A4A, 0.5);
+        color:  rgba(#fff, 0.8);
+        box-shadow: 0 0 10px rgba(#000, 0.5);
+    }
+    &--prev{
+        left: -10%;
+    }
+    &--next{
+        right: -10%;
+    }
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 0.9s;
+}
+@keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+}
+.move {
+    animation-name: move;
+    animation-duration: 1s;
+}
+@keyframes move {
+    from {
+      right: 20%;
+    }
+    to {
+      right: 0;
+    }
+}

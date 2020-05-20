@@ -1,0 +1,33 @@
+.about {
+    background: url('../img/aboutFon.png') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: 134px;
+    padding-bottom: 173px;
+    flex-wrap: wrap;
+}
+.about__img {
+    flex: 0 1 40%;
+    padding-right: 10px;
+}
+.about__img-item {
+    width: 100%;
+   // min-width: 300px;
+}
+.about__content {
+    flex: 0 1 55%;
+    z-index: 1;
+}
+.about__img-paper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}

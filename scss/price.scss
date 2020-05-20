@@ -1,0 +1,68 @@
+.price {
+    background: url('../img/menuFon.jpg') center no-repeat #000;
+    background-size: cover;
+    position: relative;
+    min-height: 986px;
+}
+.price__row {
+    padding: 100px 20px 173px 20px;
+    text-align: center;
+    position: relative;
+}
+.price__item {
+    display: flex;
+    justify-content: flex-start;
+    // &--reverse {
+    //     justify-content: flex-end;
+    // }
+    position: relative;
+    margin-bottom: 57px;
+    z-index: 1;
+}
+// .nextAnim {
+//     transform: translate(200%);
+//     transition: all 1s ease 0.5s;
+// }
+.price__img-block {
+    flex: 0 1 60%;
+    min-width: 669px;
+}
+.price__img {
+    width: 100%;
+}
+.price__content {
+    background: url('../img/aboutFon.png') center no-repeat #fff;
+    background-size: cover;
+    text-align: left;
+    padding: 42px 63px 60px 63px;
+    position: absolute;
+    max-width: 505px;
+    right: 0;
+    top: 10%;
+}
+.price__content-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.price__content-img {
+    max-width: 45px;
+    max-height: 45px;
+    margin-right: 5px;
+}
+.price__text {
+    font-size: 18px;
+    text-align: left;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+// .price__content--reverse {
+//     left: 0;
+// }
+.price__img-paper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}

@@ -1,0 +1,67 @@
+.delightful {
+  background: url("../img/aboutFon.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; }
+
+.delightful__subtitle {
+  margin-bottom: 65px; }
+
+.delightful__row {
+  padding: 94px 20px 117px 20px;
+  text-align: center;
+  z-index: 1; }
+
+.delightful__items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 55px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .delightful__items:last-child {
+    padding-bottom: 0; }
+
+.delightful__modal {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  z-index: 99;
+  top: 10%;
+  left: 50%;
+  margin-left: -40%;
+  background-color: black;
+  opacity: 0.8;
+  color: #fff;
+  padding: 10% 5%;
+  display: none; }
+
+.delightful__item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  z-index: 3;
+  position: relative; }
+  .delightful__item:hover .delightful__modal {
+    display: block; }
+
+.delightful__img {
+  width: 100%;
+  z-index: 98; }
+
+.delightful__img-paste {
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  z-index: 2; }

@@ -1,0 +1,39 @@
+.special {
+  background: url("../img/specialFon.jpeg") center no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.special__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 96px 20px 135px 20px;
+  position: relative; }
+
+.special__content {
+  background: url("../img/specialContentFon.png") center no-repeat;
+  background-size: cover;
+  max-width: 534px;
+  padding: 50px;
+  max-height: 467px;
+  position: absolute;
+  top: 18%;
+  left: -1%;
+  z-index: 3; }
+
+.special__img {
+  max-width: 671px; }
+
+.special__img-item {
+  width: 100%; }
+
+.special__img-potato {
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+  z-index: 2; }

@@ -1,0 +1,86 @@
+.popup {
+    position: absolute;
+    width: 400px;
+    min-height: 400px;
+    background-color: #000;
+    opacity: 0.8;
+    top: 20%;
+    right: 0;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 20px;
+    z-index: 100;
+    display: none;
+    cursor: move;
+}
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1002;
+}
+.basket {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1001;
+}
+.basket__message {
+    align-self: center;
+}
+.basket__list {
+    margin-bottom: 30px;
+}
+.basket__price {
+    margin-bottom: 20px;
+}
+.basket__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.basket__item-name {
+    margin-right: 10px;
+    min-width: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: left;
+}
+.basket__item-btn {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: #E7A331;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.basket__item-count {
+    margin: 0 10px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    font-size: 20px;
+}
+.basket__input {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.basket__submit {
+    cursor: pointer;
+}
+// .basket--hidden {
+//     display: none;
+// }

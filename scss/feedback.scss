@@ -1,0 +1,83 @@
+.feedback {
+    background: url('../img/botFon.jpg') center no-repeat #000;
+    background-size: cover;
+    position: relative;
+}
+.feedback__row {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 65px 20px 33px 20px;
+    z-index: 1;
+}
+.feedback__content {
+    z-index: 1;
+}
+.feedback__text {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+    color: #fff;
+    &--first {
+        margin-top: 63px;
+    }
+    &--mtop {
+        margin-top: 27px;
+    }
+    &--mb {
+        margin-bottom: 115px;
+    }
+}
+.feedback__social {
+    text-align: center;
+}
+.feedback__link {
+    color: #E7A331;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 372px;
+    z-index: 1;
+}
+.feedback__input {
+    height: 45px;
+    &--style {
+        background-color: #323232;
+        margin-bottom: 9px;
+        border-radius: 2px;
+        padding-left: 20px;
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+.feedback__message {
+    height: 110px;
+    padding-top: 10px;
+    resize: none;  
+}
+.feedback__input--btn {
+    cursor: pointer;
+}
+.feedback__img-udon {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index: 0;
+    max-height: 267px;
+}
+.feedback__img-paste {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    z-index: 0;
+    max-height: 267px;
+}

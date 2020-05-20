@@ -1,0 +1,71 @@
+.price {
+  background: url("../img/menuFon.jpg") center no-repeat #000;
+  background-size: cover;
+  position: relative;
+  min-height: 986px; }
+
+.price__row {
+  padding: 100px 20px 173px 20px;
+  text-align: center;
+  position: relative; }
+
+.price__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  margin-bottom: 57px;
+  z-index: 1; }
+
+.price__img-block {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 60%;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  min-width: 669px; }
+
+.price__img {
+  width: 100%; }
+
+.price__content {
+  background: url("../img/aboutFon.png") center no-repeat #fff;
+  background-size: cover;
+  text-align: left;
+  padding: 42px 63px 60px 63px;
+  position: absolute;
+  max-width: 505px;
+  right: 0;
+  top: 10%; }
+
+.price__content-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px; }
+
+.price__content-img {
+  max-width: 45px;
+  max-height: 45px;
+  margin-right: 5px; }
+
+.price__text {
+  font-size: 18px;
+  text-align: left; }
+  .price__text:last-child {
+    margin-bottom: 0; }
+
+.price__img-paper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0; }

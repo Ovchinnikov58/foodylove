@@ -1,0 +1,115 @@
+.popup {
+  position: fixed;
+  width: 400px;
+  min-height: 400px;
+  background-color: #000;
+  opacity: 0.8;
+  top: 20%;
+  right: 0;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 20px;
+  z-index: 100;
+  display: none;
+  cursor: move; }
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1002; }
+
+.basket {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 1001; }
+
+.basket__message {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
+
+.basket__list {
+  margin-bottom: 30px; }
+
+.basket__price {
+  margin-bottom: 20px; }
+
+.basket__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px; }
+
+.basket__item-name {
+  margin-right: 10px;
+  min-width: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  font-size: 20px;
+  text-align: left; }
+
+.basket__item-btn {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: #E7A331;
+  font-size: 20px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.basket__item-count {
+  margin: 0 10px;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  font-size: 20px; }
+
+.basket__input {
+  margin-bottom: 20px;
+  width: 60%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px; }
+
+.basket__submit {
+  cursor: pointer; }
