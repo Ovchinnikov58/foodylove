@@ -48,6 +48,7 @@ window.addEventListener('DOMContentLoaded', function() {
     next.addEventListener('click', function() {
         //moveSlide('left')
         clearSlider();
+        console.log('clear-worked');
         showSlide(++index);
     });
 
@@ -231,7 +232,9 @@ window.addEventListener('DOMContentLoaded', function() {
     //nav
 
     let menuLink = document.getElementById('priceLink');
-    let pricePos = document.querySelector('.price').getBoundingClientRect();
+    let spesialLink = document.getElementById('specialLink');
+    let deliveryLink = document.getElementById('deliveryLink');
+    let adoutLink = document.getElementById('adoutLink');
 
     menuLink.addEventListener('click', function() {
         window.scrollTo({
@@ -239,6 +242,28 @@ window.addEventListener('DOMContentLoaded', function() {
             behavior: "smooth" // плавно
         });
     });
+
+    spesialLink.addEventListener('click', function() {
+        window.scrollTo({
+            top: document.querySelector('.special').getBoundingClientRect().top,
+            behavior: "smooth" // плавно
+        });
+    });
+
+    deliveryLink.addEventListener('click', function() {
+        window.scrollTo({
+            top: document.querySelector('.delightful').getBoundingClientRect().top,
+            behavior: "smooth" // плавно
+        });
+    });
+
+    adoutLink.addEventListener('click', function() {
+        window.scrollTo({
+            top: document.querySelector('.about').getBoundingClientRect().top,
+            behavior: "smooth" // плавно
+        });
+    });
+
 
     //dragNDror
 
@@ -272,5 +297,80 @@ window.addEventListener('DOMContentLoaded', function() {
       popup.addEventListener('dragstart', function() {
         return false;
       });
+
+
+      //табы
+
+      let mainContantElems = document.querySelectorAll('.main__content');
+      let tabElemHome = document.getElementById('tabElemHome');
+      let tabElemNews = document.getElementById('tabElemNews');
+
+      hideMainBlock();
+      mainContantElems[0].style.display = 'flex';
+
+      tabElemHome.addEventListener('click', function() {
+        mainContantElems[0].style.display = 'flex';
+        mainContantElems[1].style.display = 'none';
+      });
+
+      tabElemNews.addEventListener('click', function() {
+        mainContantElems[1].style.display = 'flex';
+        mainContantElems[0].style.display = 'none';
+      });
+
+      function hideMainBlock() {
+        mainContantElems.forEach(el => el.style.display = 'none');
+      }
+
+      //отправка формы с корзиной на сервер
+
+    let message = {
+        success: 'Спасибо! Скоро мы с вами свяжемся!',
+        failure: 'Что-то пошло не так'
+    };
+
+    
+    let input = formBasket.getElementsByTagName('input');
+    let statusMessage = document.createElement('div');
+    statusMessage.classList.add('status');
+
+    formBasket.addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        let response = await fetch('server.php', {
+            method: 'POST',
+            body: new FormData(formBasket)
+        });
+
+        //let result = await response.json;
+
+        formBasket.appendChild(statusMessage);
+        
+        if (response.ok) {
+            statusMessage.innerHTML = message.success;
+        } else {
+            statusMessage.innerHTML = message.failure;
+        }
+        setTimeout(() => statusMessage.remove(), 5000);
+
+        localStorage.clear();
+
+        for (let el in basket) {
+            delete basket[el];
+        }
+
+        changeBasketClear();
+        checkBasket();
+        fillBasket();
+
+        document.querySelectorAll('.basket__item').forEach(el => el.remove());
+        console.log(basket);
+    
+    
+        for (let i = 0; i < input.length; i++) {
+            input[i].value = '';
+        }
+        
+    });
 
 });
